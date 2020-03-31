@@ -1,30 +1,19 @@
 {
-  "name": "node-oracledb-webpack-example",
+  "name": "webpack-example",
   "version": "0.0.1",
-  "description": "Example Webpack projekt for node-oracledb",
-  "main": "src/index.js",
+  "description": "Example Webpack project for node-oracledb",
+  "main": "src/example.js",
   "dependencies": {
-    "oracledb": "^4.2.0"
+    "oracledb": "https://github.com/oracle/node-oracledb.git#master"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "babel-eslint": "^10.0.2",
-    "babel-plugin-rewire": "^1.1.0",
     "clean-webpack-plugin": "^3.0.0",
-    "copy-webpack-plugin": "^5.1.0",
-    "start-server-webpack-plugin": "^2.2.5",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-node-externals": "^1.7.2",
-    "webpack-shell-plugin": "^0.5.0"
-  },
-  "engines": {
-    "node": "10.16.0",
-    "npm": "6.9.0"
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   },
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "build": "npm install && webpack --config webpack.config.js"
   },
   "license": "MIT"
 }
